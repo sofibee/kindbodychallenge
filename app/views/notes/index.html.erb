@@ -1,0 +1,16 @@
+<h1>Notes History</h1>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @notes.each do |note| %>
+    <tr>
+      <td><%= note.text %></td>
+      <td><%= link_to 'Edit Note', edit_patient_note_path(@patient, note) %></td>
+    </tr>
+  <% end %>
+</table>

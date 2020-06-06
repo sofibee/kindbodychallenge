@@ -1,0 +1,12 @@
+<h1>New Note</h1>
+
+<%= form_with scope: :note, url: patient_notes_path, local: true do |form| %>
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

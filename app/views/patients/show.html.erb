@@ -13,4 +13,6 @@
   <%= @patient.dob %>
 </p>
 
+<%= link_to 'All Notes For Patient', patient_notes_path(@patient.id) %>
+
 <%= link_to 'All Patients', patients_path %>
