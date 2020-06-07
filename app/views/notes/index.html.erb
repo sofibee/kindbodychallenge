@@ -11,6 +11,9 @@
     <tr>
       <td><%= note.text %></td>
       <td><%= link_to 'Edit Note', edit_patient_note_path(@patient, note) %></td>
+      <td><%= link_to 'Delete Note', patient_note_path(@patient, note), method: :delete, data: { confirm: 'Are you sure?'} %></td>
     </tr>
   <% end %>
-</table>
+</table><br>
+
+<%= link_to 'All Patients', controller: 'patients' %><br>

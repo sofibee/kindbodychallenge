@@ -6,11 +6,11 @@ class NotesController < ApplicationController
   end
 
   # TO DO:below needs to be fixed
-  def show
+  # def show
     # @note = Note.find_by(patient_id: params[:patent_id], id: params[:id])
-    @patient = Patient.find(params[:patient_id])
-    @note = Note.find(params[:id])
-  end
+  #   @patient = Patient.find(params[:patient_id])
+  #   @note = Note.find(params[:id])
+  # end
 
   def create
     @patient = Patient.find(params[:patient_id])
@@ -27,12 +27,16 @@ class NotesController < ApplicationController
   end
 
   def update
-    # raise params.inspect
     @note = Note.find(params[:id])
     @note.update(note_params)
 
-    @patient = Patient.find(params[:patient_id])
-    @notes = @patient.notes
+    redirect_to patient_notes_url(params[:patient_id])
+  end
+
+  def destroy
+    @note = Note.find(params[:id])
+    @note.destroy
+
     redirect_to patient_notes_url(params[:patient_id])
   end
 
