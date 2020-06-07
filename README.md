@@ -1,24 +1,14 @@
-# README
+# Kindbody Patient Notes Ruby on Rails Portal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Follow these steps to get the
+application up and running:
 
-Things you may want to cover:
+1. Create tables with `rails db:migrate`
+According to the MVC structure, the app will create a ‘Patients’ and ‘Notes’ models with associated database tables.
 
-* Ruby version
+2. Populate database with `rake db:seed`
 
-* System dependencies
+3. Start up the web server with `rails server`
 
-* Configuration
+4. Navigate to the app at  http://localhost:3000 in your browse
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
