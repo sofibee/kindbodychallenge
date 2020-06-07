@@ -13,4 +13,10 @@ patients = Patient.create([{first_name: 'Jeff', last_name: 'Winger', dob: '11/20
                           {first_name: 'Annie', last_name: 'Edison', dob: '12/29/1982'},
                           {first_name: 'Shirley', last_name: 'Bennett', dob: '08/12/1971'} ])
 
-Note.create(text: 'Appears to have a cold', patient_id: 1)
+notes = Note.create([{text: 'Has a broken leg', patient_id: 1},
+                    {text: 'Patient has a fever', patient_id: 2},
+                    {text: 'Appears to have a cold', patient_id: 3},
+                    {text: 'Patient complains of a headache', patient_id: 4},
+                    {text: 'Has a broken arm', patient_id: 5},
+                    {text: 'Regular checkup', patient_id: 6}])
+

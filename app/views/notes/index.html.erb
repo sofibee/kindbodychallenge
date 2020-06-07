@@ -1,4 +1,6 @@
-<h1>Notes History</h1>
+<h1>
+Notes History for <%= @patient.last_name %>, <%= @patient.first_name %>
+</h1>
 
 <table>
   <tr>
@@ -16,4 +18,6 @@
   <% end %>
 </table><br>
 
-<%= link_to 'All Patients', controller: 'patients' %><br>
+<%= link_to 'Add A New Note', new_patient_note_path(@patient) %><br>
+
+<%= link_to 'All Patients', controller: 'patients' %>
