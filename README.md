@@ -1,4 +1,4 @@
-# Kindbody Patient Notes Ruby on Rails Portal
+# Kindbody Patient Notes Portal - Ruby on Rails 
 
 Follow these steps to get the
 application up and running:
