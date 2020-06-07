@@ -3,8 +3,8 @@
 Follow these steps to get the
 application up and running:
 
-1. Create tables with `rails db:migrate`
-According to the MVC structure, the app will create a ‘Patients’ and ‘Notes’ models with associated database tables.
+1. Create tables with `rails db:migrate`.
+According to the MVC structure, the app will create ‘Patients’ and ‘Notes’ models with associated database tables.
 
 2. Populate database with `rake db:seed`
 
